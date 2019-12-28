@@ -1,5 +1,5 @@
 # Laradocker
-[![Build Status](https://img.shields.io/docker/cloud/build/bredmorg/laradocker?style=flat-square)](https://hub.docker.com/repository/docker/bredmorg/laradocker)
+[![Build Status](https://img.shields.io/docker/cloud/build/bredmorg/laradocker?style=flat-square)](https://hub.docker.com/repository/docker/bredmorg/laradocker) ![Docker Pulls](https://img.shields.io/docker/pulls/bredmorg/laradocker?style=flat-square)
 
 Docker image for Laravel & Laravel Vapor CLI
 
