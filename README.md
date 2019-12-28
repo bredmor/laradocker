@@ -12,7 +12,7 @@ All image tags on docker hub correspond to the same tag in this repository.
 # Newest Major Versions
 See [Releases](https://github.com/bredmor/laradocker/releases) for complete version history.
 
-## v2.0
+## v2.1
 - Base Image: Ubuntu@latest
 - PHP: `7.4`
 - Node: `12`
