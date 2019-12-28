@@ -28,4 +28,4 @@ See [Releases](https://github.com/bredmor/laradocker/releases) for complete vers
 **Node.JS** Will always be the newest available minor and patch *LTS* version from [Nodesource](https://downloads.nodesource.com/#debian). New major versions will be tagged as new major versions of this image.
 
 # Contributions, Issues and Requests
-I monitor this repo daily and will respond to open Issues and Pull Requests.
+I monitor this repo daily and will respond to open Issues and Pull Requests. You can also shout out to me on [Twitter](https://twitter.com/bredmor) for a quicker response.
