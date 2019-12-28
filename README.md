@@ -21,3 +21,11 @@ See [Releases](https://github.com/bredmor/laradocker/releases) for complete vers
 - Base Image: Ubuntu@latest
 - PHP: `7.3`
 - Node: `12`
+
+# Software Versions
+**PHP** Will always be the newest available patch version for Ubuntu from [Ondřej Surý's PPA](https://launchpad.net/~ondrej/+archive/ubuntu/php). New minor and major versions will be tagged as new major versions of this image.
+
+**Node.JS** Will always be the newest available minor and patch *LTS* version from [Nodesource](https://downloads.nodesource.com/#debian). New major versions will be tagged as new major versions of this image.
+
+# Contributions, Issues and Requests
+I monitor this repo daily and will respond to open Issues and Pull Requests.
