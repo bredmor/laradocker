@@ -55,6 +55,7 @@ RUN apt-get update && \
         php7.4-dev \
         php7.4-calendar \
         php7.4-imagick \
+        php7.4-redis \
         pkg-config \
         libcurl4-openssl-dev \
         libedit-dev \
