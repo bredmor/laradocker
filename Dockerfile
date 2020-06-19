@@ -71,7 +71,8 @@ RUN apt-get update && \
         postgresql-client \
         nodejs \
         openssh-client \
-       unzip \
+	zip \
+       	unzip \
     && apt-get clean
 
 # Install composer and add its bin to the PATH.
