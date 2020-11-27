@@ -37,24 +37,23 @@ RUN apt-get update && \
     apt-get upgrade -y && \
     apt-get install -y --allow-downgrades --allow-remove-essential \
         --allow-change-held-packages \
-        php7.3-cli \
-        php7.3-common \
-        php7.3-curl \
-        php7.3-intl \
-        php7.3-json \
-        php7.3-xml \
-        php7.3-mbstring \
-        php7.3-mysql \
-        php7.3-pgsql \
-        php7.3-sqlite \
-        php7.3-sqlite3 \
-        php7.3-zip \
-        php7.3-bcmath \
-        php7.3-memcached \
-        php7.3-gd \
-        php7.3-dev \
-	php7.3-calendar \
-        php7.3-imagick \
+        php8.0-cli \
+        php8.0-common \
+        php8.0-curl \
+        php8.0-intl \
+        php8.0-xml \
+        php8.0-mbstring \
+        php8.0-mysql \
+        php8.0-pgsql \
+        php8.0-sqlite \
+        php8.0-sqlite3 \
+        php8.0-zip \
+        php8.0-bcmath \
+        php8.0-memcached \
+        php8.0-gd \
+        php8.0-dev \
+	php8.0-calendar \
+        php8.0-imagick \
         pkg-config \
         libcurl4-openssl-dev \
         libedit-dev \
@@ -94,6 +93,5 @@ ENV COMPOSER_HOME /composer
 ENV PATH "/composer/vendor/bin:~/.local/bin:$PATH"
 
 RUN set -xe && \
-        composer global require hirak/prestissimo && \
         composer global require laravel/vapor-cli && \
         composer clear-cache
