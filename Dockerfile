@@ -82,7 +82,7 @@ RUN curl -s http://getcomposer.org/installer | php && \
 RUN . ~/.bashrc
 
 # Install NPM
-RUN curl --silent --location https://deb.nodesource.com/setup_12.x | bash - \
+RUN curl --silent --location https://deb.nodesource.com/setup_14.x | bash - \
   && apt-get install -y nodejs \
   && curl -L https://www.npmjs.com/install.sh | sh
 

@@ -12,6 +12,12 @@ All image tags on docker hub correspond to the same tag in this repository.
 # Newest Major Versions
 See [Releases](https://github.com/bredmor/laradocker/releases) for complete version history.
 
+## v3.1
+- Base Image: Ubuntu@latest
+- PHP: `8.0`
+- Node: `14`
+- Composer: `2`
+
 ## v3.0.1
 - Base Image: Ubuntu@latest
 - PHP: `8.0`
@@ -22,11 +28,13 @@ See [Releases](https://github.com/bredmor/laradocker/releases) for complete vers
 - Base Image: Ubuntu@latest
 - PHP: `7.4`
 - Node: `12`
+- Composer: `1`
 
 ## v1.0
 - Base Image: Ubuntu@latest
 - PHP: `7.3`
 - Node: `12`
+- Composer: `1`
 
 # Software Versions
 **PHP** Will always be the newest available patch version for Ubuntu from [Ondřej Surý's PPA](https://launchpad.net/~ondrej/+archive/ubuntu/php). New minor and major versions will be tagged as new major versions of this image.
