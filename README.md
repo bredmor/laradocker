@@ -16,30 +16,28 @@ See [Releases](https://github.com/bredmor/laradocker/releases) for complete vers
 - Base Image: Ubuntu@latest
 - PHP: `8.0`
 - Node: `14`
-- Composer: `2`
 
 ## v3.0.1
 - Base Image: Ubuntu@latest
 - PHP: `8.0`
 - Node: `12`
-- Composer: `2`
 
-## v2.1
+## v2.2
 - Base Image: Ubuntu@latest
 - PHP: `7.4`
-- Node: `12`
-- Composer: `1`
+- Node: `14`
 
 ## v1.0
 - Base Image: Ubuntu@latest
 - PHP: `7.3`
 - Node: `12`
-- Composer: `1`
 
 # Software Versions
 **PHP** Will always be the newest available patch version for Ubuntu from [Ondřej Surý's PPA](https://launchpad.net/~ondrej/+archive/ubuntu/php). New minor and major versions will be tagged as new major versions of this image.
 
 **Node.JS** Will always be the newest available minor and patch *LTS* version from [Nodesource](https://downloads.nodesource.com/#debian). New major versions will be tagged as new major versions of this image.
+
+**Composer** Will always be the newest available version until such time that a composer release does not support PHP 7.3 (laradocker v1.0)
 
 # Contributions, Issues and Requests
 I monitor this repo daily and will respond to open Issues and Pull Requests. You can also shout out to me on [Twitter](https://twitter.com/bredmor) for a quicker response.
