@@ -20,19 +20,19 @@ ENV LC_CTYPE=en_US.UTF-8
 ENV LANG=en_US.UTF-8
 ENV TERM xterm
 
-# Add the "PHP 7" ppa
+# Add PHP7 PPA from ondrej
 RUN apt-get install -y software-properties-common && \
     add-apt-repository -y ppa:ondrej/php
 
 #
 #--------------------------------------------------------------------------
-# Software's Installation
+# Software Installation
 #--------------------------------------------------------------------------
 #
 
 RUN echo 'DPkg::options { "--force-confdef"; };' >> /etc/apt/apt.conf
 
-# Install "PHP Extentions", "libraries", "Software's"
+# Install required software and common PHP extensions
 RUN apt-get update && \
     apt-get upgrade -y && \
     apt-get install -y --allow-downgrades --allow-remove-essential \
@@ -67,13 +67,11 @@ RUN apt-get update && \
         vim \
         nano \
         postgresql-client \
-	nodejs \
+        nodejs \
         openssh-client \
-	unzip \
+	zip \
+       	unzip \
     && apt-get clean
-
-# Composer:
-#####################################
 
 # Install composer and add its bin to the PATH.
 RUN curl -s http://getcomposer.org/installer | php && \
@@ -88,10 +86,12 @@ RUN curl --silent --location https://deb.nodesource.com/setup_12.x | bash - \
   && apt-get install -y nodejs \
   && curl -L https://www.npmjs.com/install.sh | sh
 
+# Setup composer vars
 ENV COMPOSER_ALLOW_SUPERUSER 1
 ENV COMPOSER_HOME /composer
 ENV PATH "/composer/vendor/bin:~/.local/bin:$PATH"
 
+# Install prestissimo for paralell downloads & install Vapor CLI
 RUN set -xe && \
         composer global require laravel/vapor-cli && \
         composer clear-cache
