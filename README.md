@@ -3,6 +3,8 @@
 
 Docker image for Laravel & Laravel Vapor CLI
 
+If you want to run dockerized Laravel locally, consider using [Laravel Sail](https://laravel.com/docs/8.x/sail) instead.
+
 
 # Latest Stable Version
 Docker tag `latest` will always reflect the current state of [master](https://github.com/bredmor/laradocker/tree/master). It is recommended to specify one of the tags below when using this image so as to avoid any unexpected issues. 
