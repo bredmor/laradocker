@@ -37,23 +37,23 @@ RUN apt-get update && \
     apt-get upgrade -y && \
     apt-get install -y --allow-downgrades --allow-remove-essential \
         --allow-change-held-packages \
-        php8.0-cli \
-        php8.0-common \
-        php8.0-curl \
-        php8.0-intl \
-        php8.0-xml \
-        php8.0-mbstring \
-        php8.0-mysql \
-        php8.0-pgsql \
-        php8.0-sqlite \
-        php8.0-sqlite3 \
-        php8.0-zip \
-        php8.0-bcmath \
-        php8.0-memcached \
-        php8.0-gd \
-        php8.0-dev \
-	php8.0-calendar \
-        php8.0-imagick \
+        php8.1-cli \
+        php8.1-common \
+        php8.1-curl \
+        php8.1-intl \
+        php8.1-xml \
+        php8.1-mbstring \
+        php8.1-mysql \
+        php8.1-pgsql \
+        php8.1-sqlite \
+        php8.1-sqlite3 \
+        php8.1-zip \
+        php8.1-bcmath \
+        php8.1-memcached \
+        php8.1-gd \
+        php8.1-dev \
+	php8.1-calendar \
+        php8.1-imagick \
         pkg-config \
         libcurl4-openssl-dev \
         libedit-dev \
